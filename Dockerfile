@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none VER=3.39
+ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none VER=3.36
 
 ENV CONFIG_JSON1="{\n  \"log\": {\n    \"loglevel\": \"warning\"\n  },\n  \"inbound\": {\n    \"protocol\": \"vmess\",\n    \"port\": 8080,\n    \"settings\": {\n      \"clients\": [\n        {\n          \"id\": \""
 ENV UUID="230aeb68-fed9-442e-8006-61dde2e62a80"
