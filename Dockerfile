@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none VER=3.39
+
 ENV CONFIG_JSON1="{\n  \"log\": {\n    \"loglevel\": \"warning\"\n  },\n  \"inbound\": {\n    \"protocol\": \"vmess\",\n    \"port\": 8080,\n    \"settings\": {\n      \"clients\": [\n        {\n          \"id\": \""
 ENV UUID="230aeb68-fed9-442e-8006-61dde2e62a80"
 ENV CONFIG_JSON2="\",\n          \"alterId\": 64,\n          \"security\": \"none\"\n        }\n      ]\n    },\n    \"streamSettings\": {\n      \"network\": \"ws\"\n    }\n  },\n  \"inboundDetour\": [],\n  \"outbound\": {\n    \"protocol\": \"freedom\",\n   \"settings\": {}\n  }\n}"
